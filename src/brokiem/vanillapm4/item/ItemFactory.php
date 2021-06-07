@@ -6,7 +6,7 @@ namespace brokiem\vanillapm4\item;
 
 use pocketmine\item\ItemFactory as ItemFactoryPM;
 use pocketmine\item\ItemIdentifier;
-use pocketmine\item\ItemIds;
+use pocketmine\item\ItemIds as ItemIdsPM;
 
 class ItemFactory {
 
@@ -14,6 +14,8 @@ class ItemFactory {
         /** @var ItemFactoryPM $i */
         $i = ItemFactoryPM::getInstance();
 
-        $i->register(new SweetBerries(new ItemIdentifier(ItemIds::SWEET_BERRIES, 0)));
+        $i->register(new SweetBerries(new ItemIdentifier(ItemIdsPM::SWEET_BERRIES, 0), "Sweet Berries"));
+        $i->register(new Campfire(new ItemIdentifier(ItemIds::CAMPFIRE, 0), "Campfire"));
+
     }
 }
