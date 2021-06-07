@@ -16,6 +16,6 @@ class ItemFactory {
 
         $i->register(new SweetBerries(new ItemIdentifier(ItemIdsPM::SWEET_BERRIES, 0), "Sweet Berries"));
         $i->register(new Campfire(new ItemIdentifier(ItemIds::CAMPFIRE, 0), "Campfire"));
-
+        $i->register(new HoneyBottle(new ItemIdentifier(ItemIds::HONEY_BOTTLE, 0), "Honey Bottle"));
     }
 }
