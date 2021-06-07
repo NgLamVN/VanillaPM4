@@ -8,6 +8,10 @@ use pocketmine\item\Food;
 
 class HoneyBottle extends Food
 {
+	public function requiresHunger() : bool {
+		return false;
+	}
+
 	public function getFoodRestore() : int {
 		return 6;
 	}
