@@ -16,6 +16,10 @@ class HoneyBottle extends Food
 		return 1.2;
 	}
 
+	public function getMaxStackSize() : int{
+		return 16;
+	}
+
 	public function onConsume(Living $consumer) : void {
 		if ($consumer->getEffects()->has(VanillaEffects::POISON()))
 		{
